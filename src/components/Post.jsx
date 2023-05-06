@@ -50,7 +50,7 @@ const Post = () => {
       <div className="my-2">
         <h1 className="text-center text-2xl font-bold">{post.title}</h1>
         <p className="my-2 flex gap-3 justify-center">
-          <span className="text-sm">By: {post.userName}</span>
+          <span className="text-sm">{post.userName}</span>
           <span className="text-sm">
             {new Date(post.createdAt).toLocaleString(locales, options)}
           </span>

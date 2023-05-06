@@ -30,7 +30,7 @@ const Header = () => {
         </NavLink>
         <ul className="hidden md:flex gap-4">
           <NavLink to="/new-post">
-            <li className="font-semibold hover:text-cyan-400">Add Post</li>
+            <li className="font-semibold hover:text-cyan-400">Create Post</li>
           </NavLink>
           {user ? (
             <button
@@ -63,7 +63,7 @@ const Header = () => {
       >
         <ul className="w-full py-8 px-4 text-center bg-white rounded-2xl shadow-xl border mx-auto">
           <NavLink to="/new-post" onClick={closeNav}>
-            <li className="border-b py-2">Add Post</li>
+            <li className="border-b py-2">Create Post</li>
           </NavLink>
           {user ? (
             <button onClick={onLogout} className="font-semibold">

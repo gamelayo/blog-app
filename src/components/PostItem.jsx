@@ -24,7 +24,7 @@ const PostItem = ({ post }) => {
             {post.title}
           </h1>
           <div className="flex gap-3">
-            <p className="text-sm text-start">By: {post.userName}</p>
+            <p className="text-sm text-start">{post.userName}</p>
             <p className="text-sm text-start">
               {new Date(post.createdAt).toLocaleString(locales, options)}
             </p>
